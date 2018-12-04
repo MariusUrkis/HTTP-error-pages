@@ -2,14 +2,11 @@
 
 After cloning to the appropriate folder do the following:
 
-1. Setup contact email..
-```
-sed -i 's/_EMAIL_/some@real.email/g' HTTPcode*.html
-```
+1. Setup contact email `sed -i 's/_EMAIL_/some@real.email/g' HTTPcode*.html`
 1. Copy logo image and tune style.css accordingly
 1. Add Apache configuration to the virtual host section. For other web servers check relevant configuration.
 
-```
+```ApacheConf
 ErrorDocument 400 /errorpages/HTTPcode400.html
 ErrorDocument 401 /errorpages/HTTPcode401.html
 ErrorDocument 403 /errorpages/HTTPcode403.html
