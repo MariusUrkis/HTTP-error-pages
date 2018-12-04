@@ -3,7 +3,7 @@
 After cloning to the appropriate folder do the following:
 
 1. Setup contact email: 
-```
+```Shell
 sed -i 's/_EMAIL_/some@real.email/g' HTTPcode*.html
 ```
 1. Copy logo image and tune style.css accordingly
