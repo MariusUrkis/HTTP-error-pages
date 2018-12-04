@@ -2,10 +2,10 @@
 
 After cloning to the appropriate folder do the following:
 
-1. Setup contact email
+1. Setup contact email..
 ```
 sed -i 's/_EMAIL_/some@real.email/' HTTPcode*.html
-..*```
+```
 1. Copy logo image and tune style.css accordingly
 1. Add Apache configuration to the virtual host section. For other web servers check relevant configuration.
 
