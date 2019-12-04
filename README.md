@@ -2,15 +2,15 @@
 
 After cloning to the appropriate folder do the following:
 
-1. Setup contact email: 
+- Setup contact email: 
 ```Shell
 sed -i 's/_EMAIL_/some@real.email/g' HTTPcode*.html
 ```
-1. Copy logo image and tune style.css accordingly if needed
+- Copy logo image and tune style.css accordingly if needed
 ```Shell
 curl -k -o logo.png https://some.location/logo.png
-
-1. Add Apache configuration. You can edit conf-available/localized-error-pages.conf file. For other web servers check relevant configuration.
+```
+- Add Apache configuration. You can edit conf-available/localized-error-pages.conf file. For other web servers check relevant configuration.
 
 ```ApacheConf
 <Location /errorpages/>
@@ -32,6 +32,7 @@ ErrorDocument 501 /errorpages/HTTPcode501.html
 ErrorDocument 502 /errorpages/HTTPcode502.html
 ErrorDocument 503 /errorpages/HTTPcode503.html
 ```
-1. Reload apache configuration
+- Reload apache configuration
 ```Shell
 service apache2 reload
+```
